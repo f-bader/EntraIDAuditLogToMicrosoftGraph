@@ -1,0 +1,29 @@
+name: Create Output Files
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "source/**"
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Generate output files
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout GitHub repo
+        uses: actions/checkout@v3
+
+      - name: Create output files from source files
+        shell: pwsh
+        run: |
+          Get-ChildItem -Filter *.csv -Path ./source | Import-Csv | Sort-Object EntraIDOperationName | Select-Object -Unique * | Export-Csv -Path ./output/AuditEventToGraphUri.csv -Force
+          Import-Csv ./output/AuditEventToGraphUri.csv | ConvertTo-Json | Out-File ./output/AuditEventToGraphUri.json -Encoding utf8 -Force
+
+      - name: Commit changes to GitHub repository
+        uses: stefanzweifel/git-auto-commit-action@v5
