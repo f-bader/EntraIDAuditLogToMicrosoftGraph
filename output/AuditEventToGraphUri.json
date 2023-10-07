@@ -1,109 +1,109 @@
 [
   {
     "EntraIDOperationName": "Add conditional access policy",
-    "MicrosoftGraphRequestUri": "https:/graph.microsoft.com/<MSGraphVersion>/identity/conditionalAccess/policies",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/<MSGraphVersion>/identity/conditionalAccess/policies",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Admin deleted security info",
-    "MicrosoftGraphRequestUri": "https:/graph.microsoft.com/<MSGraphVersion>/users/<UUID>/authentication/temporaryAccessPassMethods/<UUID>",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/<MSGraphVersion>/users/<UUID>/authentication/fido2Methods/<ID>",
     "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Admin deleted security info",
-    "MicrosoftGraphRequestUri": "https:/graph.microsoft.com/<MSGraphVersion>/users/<UUID>/authentication/fido2Methods/<ID>",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/<MSGraphVersion>/users/<UUID>/authentication/temporaryAccessPassMethods/<UUID>",
     "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Admin registered security info",
-    "MicrosoftGraphRequestUri": "https:/graph.microsoft.com/<MSGraphVersion>/users/<UUID>/authentication/phoneMethods",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/<MSGraphVersion>/users/<UUID>/authentication/temporaryAccessPassMethods",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Admin registered security info",
-    "MicrosoftGraphRequestUri": "https:/graph.microsoft.com/<MSGraphVersion>/users/<UUID>/authentication/temporaryAccessPassMethods",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/<MSGraphVersion>/users/<UUID>/authentication/emailMethods",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Admin registered security info",
-    "MicrosoftGraphRequestUri": "https:/graph.microsoft.com/<MSGraphVersion>/users/<UUID>/authentication/emailMethods",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/<MSGraphVersion>/users/<UUID>/authentication/phoneMethods",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Authentication Strength Policy Create",
-    "MicrosoftGraphRequestUri": "https:/graph.microsoft.com/<MSGraphVersion>/internal/policies/authenticationStrengthPolicies/<UUID>",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/<MSGraphVersion>/identity/conditionalAccess/authenticationStrength/policies/",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Authentication Strength Policy Create",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/<MSGraphVersion>/internal/policies/authenticationStrengthPolicies/<UUID>",
     "RequestMethod": "PATCH",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Authentication Strength Policy Create",
-    "MicrosoftGraphRequestUri": "https:/graph.microsoft.com/<MSGraphVersion>/internal/policies/authenticationStrengthPolicies/",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Authentication Strength Policy Create",
-    "MicrosoftGraphRequestUri": "https:/graph.microsoft.com/<MSGraphVersion>/identity/conditionalAccess/authenticationStrength/policies/",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/<MSGraphVersion>/internal/policies/authenticationStrengthPolicies/",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "ConfirmAccountCompromised",
-    "MicrosoftGraphRequestUri": "https:/graph.microsoft.com/<MSGraphVersion>/riskyUsers/confirmCompromised",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/<MSGraphVersion>/riskyUsers/confirmCompromised",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Delete conditional access policy",
-    "MicrosoftGraphRequestUri": "https:/graph.microsoft.com/<MSGraphVersion>/identity/conditionalAccess/policies/<UUID>",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/<MSGraphVersion>/identity/conditionalAccess/policies/<UUID>",
     "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Delete FIDO2 security key(s)",
-    "MicrosoftGraphRequestUri": "https:/graph.microsoft.com/<MSGraphVersion>/users/<UUID>/authentication/fido2Methods/<ID>",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/<MSGraphVersion>/users/<UUID>/authentication/fido2Methods/<ID>",
     "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Invite external user",
-    "MicrosoftGraphRequestUri": "https:/graph.microsoft.com/<MSGraphVersion>/users/<UUID>",
-    "RequestMethod": "PATCH",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/<MSGraphVersion>/invitations",
+    "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Invite external user",
-    "MicrosoftGraphRequestUri": "https:/graph.microsoft.com/<MSGraphVersion>/invitations",
-    "RequestMethod": "POST",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/<MSGraphVersion>/users/<UUID>",
+    "RequestMethod": "PATCH",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Update application",
-    "MicrosoftGraphRequestUri": "https:/graph.microsoft.com/<MSGraphVersion>/applications('<UUID>')/onPremisesPublishing/segmentsConfiguration/microsoft.graph.IpSegmentConfiguration/ApplicationSegments",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Update application",
-    "MicrosoftGraphRequestUri": "https:/graph.microsoft.com/<MSGraphVersion>/applications('<UUID>')/onPremisesPublishing/segmentsConfiguration/microsoft.graph.IpSegmentConfiguration/ApplicationSegments('<UUID>')",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/<MSGraphVersion>/applications('<UUID>')/onPremisesPublishing/segmentsConfiguration/microsoft.graph.IpSegmentConfiguration/ApplicationSegments('<UUID>')",
     "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Update application",
-    "MicrosoftGraphRequestUri": "https:/graph.microsoft.com/<MSGraphVersion>/applications/<UUID>/onPremisesPublishing",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/<MSGraphVersion>/applications/<UUID>/onPremisesPublishing",
     "RequestMethod": "PATCH",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Update application",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/<MSGraphVersion>/applications('<UUID>')/onPremisesPublishing/segmentsConfiguration/microsoft.graph.IpSegmentConfiguration/ApplicationSegments",
+    "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Update conditional access policy",
-    "MicrosoftGraphRequestUri": "https:/graph.microsoft.com/<MSGraphVersion>/identity/conditionalAccess/policies/<UUID>",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/<MSGraphVersion>/identity/conditionalAccess/policies/<UUID>",
     "RequestMethod": "PATCH",
     "EntraIDOperationVersion": "1.0"
   }
