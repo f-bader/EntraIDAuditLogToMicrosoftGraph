@@ -21,4 +21,33 @@ Please create a pull request with your own CSV added to the source folder.
 
 ### How to create the CSV?
 
-Only time will tell.
+You must enable the [Microsoft Graph activity logs](https://learn.microsoft.com/en-us/graph/microsoft-graph-activity-logs-overview) in your Entra ID and forward the logs to a Log Analytics workspace. After a few days you can use the query below to generate the file in the correct format. Please create a pull request and put the file in the source directory. This way we can built a large dataset of Entra ID Activity logs to Microsoft Graph URI mappings.
+
+```kql
+AuditLogs
+| where TimeGenerated > ago(90d)
+| join kind=inner (
+    MicrosoftGraphActivityLogs
+    // Ignore GET requests
+    | where RequestMethod != 'GET'
+    )
+    on $left.CorrelationId == $right.ClientRequestId
+// Remove PII information and normalize the RequestURI
+| extend NormalizedRequestUri = replace_regex(RequestUri, @'[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}', @'<UUID>')
+| extend NormalizedRequestUri = replace_regex(NormalizedRequestUri, @'[a-zA-Z0-9_-]{41,65}', @'<ID>')
+| extend NormalizedRequestUri = replace_regex(NormalizedRequestUri, @'\d+$', @'<ID>')
+| extend NormalizedRequestUri = replace_regex(NormalizedRequestUri, @'\/+', @'/')
+| extend NormalizedRequestUri = replace_regex(NormalizedRequestUri, @'https:\/', @'https://')
+| extend NormalizedRequestUri = replace_regex(NormalizedRequestUri, @'%23EXT%23', @'')
+| extend NormalizedRequestUri = replace_regex(NormalizedRequestUri, @'\/[a-zA-Z0-9+_.\-]+@[a-zA-Z0-9.]+\/', @'/<UPN>/')
+| extend NormalizedRequestUri = replace_regex(NormalizedRequestUri, @'^\/<UUID>', @'')
+| extend NormalizedRequestUri = replace_regex(NormalizedRequestUri, @'\?.*$', @'')
+// Remove POST requests to the batch endpoint
+| where not ( NormalizedRequestUri matches regex @"https:\/\/graph.microsoft.com\/(v1\.0|beta)/\$batch" )
+| summarize by OperationName, NormalizedRequestUri, RequestMethod, OperationVersion
+| project-rename
+    MicrosoftGraphRequestUri = NormalizedRequestUri,
+    EntraIDOperationName = OperationName,
+    EntraIDOperationVersion = OperationVersion
+| sort by EntraIDOperationName asc 
+```
