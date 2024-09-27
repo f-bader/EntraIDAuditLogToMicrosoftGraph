@@ -1,14 +1,14 @@
 [
   {
     "EntraIDOperationName": "Accept Terms Of Use",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directory/agreements/agreementId_<UUID>/acceptances",
-    "RequestMethod": "POST",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directory/agreements/agreementId_<UUID>/acceptances/1_<UUID>_<UUID>_<UUID>",
+    "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Accept Terms Of Use",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directory/agreements/agreementId_<UUID>/acceptances/1_<UUID>_<UUID>_<UUID>",
-    "RequestMethod": "DELETE",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directory/agreements/agreementId_<UUID>/acceptances",
+    "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -19,19 +19,13 @@
   },
   {
     "EntraIDOperationName": "Add application",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/applications/<UUID>/onPremisesPublishing",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/edu/applications/<UUID>",
     "RequestMethod": "PATCH",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Add application",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/edu/applications/<UUID>",
-    "RequestMethod": "PATCH",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Add application SSL certificate",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/edu/applications/<UUID>",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/applications/<UUID>/onPremisesPublishing",
     "RequestMethod": "PATCH",
     "EntraIDOperationVersion": "1.0"
   },
@@ -39,6 +33,18 @@
     "EntraIDOperationName": "Add application SSL certificate",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/applications/<UUID>",
     "RequestMethod": "PATCH",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Add application SSL certificate",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/edu/applications/<UUID>",
+    "RequestMethod": "PATCH",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Add AuthenticationContextClassReference",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/<UUID>/identity/auxStore/authenticationContextClassReference/instances/c3:<UUID>",
+    "RequestMethod": "PUT",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -55,19 +61,19 @@
   },
   {
     "EntraIDOperationName": "Add AuthenticationContextClassReference",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/<UUID>/identity/auxStore/authenticationContextClassReference/instances/c3:<UUID>",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/<UUID>/identity/auxStore/authenticationContextClassReference/instances/c1:<UUID>",
     "RequestMethod": "PUT",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Add conditional access policy",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/identity/conditionalAccess/policies",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Add conditional access policy",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/identity/conditionalAccess/policies",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -85,25 +91,25 @@
   },
   {
     "EntraIDOperationName": "Add member to role outside of PIM (permanent)",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/servicePrincipals/getByIds",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Add member to role outside of PIM (permanent)",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/groups/getByIds",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
-    "EntraIDOperationName": "Add named location",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/conditionalAccess/namedLocations",
+    "EntraIDOperationName": "Add member to role outside of PIM (permanent)",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/servicePrincipals/getByIds",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Add named location",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Add named location",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/conditionalAccess/namedLocations",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -115,13 +121,19 @@
   },
   {
     "EntraIDOperationName": "Admin deleted security info",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/softwareOathMethods/<UUID>",
-    "RequestMethod": "DELETE",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberGroups",
+    "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Admin deleted security info",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/microsoftAuthenticatorMethods/<UUID>",
+    "RequestMethod": "DELETE",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Admin deleted security info",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/windowsHelloForBusinessMethods/<ID>",
     "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
@@ -133,14 +145,8 @@
   },
   {
     "EntraIDOperationName": "Admin deleted security info",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/methods/resetTraditionalAuthenticationMethods",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Admin deleted security info",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberGroups",
-    "RequestMethod": "POST",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/softwareOathMethods/<UUID>",
+    "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -151,8 +157,8 @@
   },
   {
     "EntraIDOperationName": "Admin deleted security info",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/windowsHelloForBusinessMethods/<ID>",
-    "RequestMethod": "DELETE",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/methods/resetTraditionalAuthenticationMethods",
+    "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -175,7 +181,7 @@
   },
   {
     "EntraIDOperationName": "Admin registered security info",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/temporaryAccessPassMethods",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/phoneMethods",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -187,19 +193,19 @@
   },
   {
     "EntraIDOperationName": "Admin registered security info",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/phoneMethods",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Admin registered security info",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberObjects",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/temporaryAccessPassMethods",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Admin registered security info",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberGroups",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Admin registered security info",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberObjects",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -229,19 +235,19 @@
   },
   {
     "EntraIDOperationName": "Administrator directly assigns user to access package",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Administrator directly assigns user to access package",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/members/$ref",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Administrator directly assigns user to access package",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Administrator directly assigns user to access package",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/microsoft.graph.getMemberGroups",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -253,7 +259,7 @@
   },
   {
     "EntraIDOperationName": "Administrator directly assigns user to access package",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/microsoft.graph.getMemberGroups",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -265,7 +271,7 @@
   },
   {
     "EntraIDOperationName": "Administrator directly removes user access package assignment",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/directoryObjects/getByIds",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/microsoft.graph.getMemberGroups",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -277,7 +283,7 @@
   },
   {
     "EntraIDOperationName": "Administrator directly removes user access package assignment",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/microsoft.graph.getMemberGroups",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/directoryObjects/getByIds",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -313,13 +319,13 @@
   },
   {
     "EntraIDOperationName": "Approval stage completed for access package assignment request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/members/$ref",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/microsoft.graph.getMemberGroups",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Approval stage completed for access package assignment request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/microsoft.graph.getMemberGroups",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/members/$ref",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -332,6 +338,12 @@
   {
     "EntraIDOperationName": "Approve access package assignment request",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/microsoft.graph.getMemberGroups",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Approve access package assignment request",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -348,9 +360,9 @@
     "EntraIDOperationVersion": "1.0"
   },
   {
-    "EntraIDOperationName": "Approve access package assignment request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments",
-    "RequestMethod": "POST",
+    "EntraIDOperationName": "Authentication Methods Policy Update",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/policies/authenticationmethodspolicy/authenticationMethodConfigurations/TemporaryAccessPass",
+    "RequestMethod": "PATCH",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -360,9 +372,15 @@
     "EntraIDOperationVersion": "1.0"
   },
   {
+    "EntraIDOperationName": "Authentication Methods Policy Update",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/policies/authenticationmethodspolicy/authenticationMethodConfigurations/Fido<ID>",
+    "RequestMethod": "PATCH",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
     "EntraIDOperationName": "Authentication Strength Policy Create",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/policies/",
-    "RequestMethod": "POST",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/internal/policies/authenticationStrengthPolicies/<UUID>",
+    "RequestMethod": "PATCH",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -373,8 +391,8 @@
   },
   {
     "EntraIDOperationName": "Authentication Strength Policy Create",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/internal/policies/authenticationStrengthPolicies/<UUID>",
-    "RequestMethod": "PATCH",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/policies/",
+    "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -385,19 +403,19 @@
   },
   {
     "EntraIDOperationName": "Authentication Strength Policy Delete",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/policies/<UUID>",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/internal/policies/authenticationStrengthPolicies/<UUID>",
     "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Authentication Strength Policy Delete",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/internal/policies/authenticationStrengthPolicies/<UUID>",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/policies/<UUID>",
     "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Authentication Strength Policy Update",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/policies/<UUID>",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/internal/policies/authenticationStrengthPolicies/<UUID>",
     "RequestMethod": "PATCH",
     "EntraIDOperationVersion": "1.0"
   },
@@ -409,7 +427,7 @@
   },
   {
     "EntraIDOperationName": "Authentication Strength Policy Update",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/internal/policies/authenticationStrengthPolicies/<UUID>",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationStrength/policies/<UUID>",
     "RequestMethod": "PATCH",
     "EntraIDOperationVersion": "1.0"
   },
@@ -421,19 +439,13 @@
   },
   {
     "EntraIDOperationName": "Auto approve access package assignment request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/owners/$ref",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Auto approve access package assignment request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Auto approve access package assignment request",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/microsoft.graph.getMemberGroups",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Auto approve access package assignment request",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/owners/$ref",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -446,6 +458,12 @@
   {
     "EntraIDOperationName": "Auto approve access package assignment request",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Auto approve access package assignment request",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -463,7 +481,7 @@
   },
   {
     "EntraIDOperationName": "Change password (self-service)",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/roleManagement/directory/estimateAccess",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directory/redeemInvitation",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -475,13 +493,31 @@
   },
   {
     "EntraIDOperationName": "Change password (self-service)",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directory/redeemInvitation",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directory/agreements/agreementId_<UUID>/acceptances",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Change password (self-service)",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directory/agreements/agreementId_<UUID>/acceptances",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/roleManagement/directory/estimateAccess",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Change password (self-service)",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/changePassword",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "ConfirmAccountCompromised",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/microsoft.graph.getByIds",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "ConfirmAccountCompromised",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/identityProtection/riskyUsers/confirmCompromised",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -504,6 +540,12 @@
     "EntraIDOperationVersion": "1.0"
   },
   {
+    "EntraIDOperationName": "ConfirmAccountSafe",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/microsoft.graph.getByIds",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
     "EntraIDOperationName": "confirmServicePrincipalCompromised",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/identityProtection/riskyServicePrincipals/microsoft.graph.confirmCompromised",
     "RequestMethod": "POST",
@@ -511,31 +553,31 @@
   },
   {
     "EntraIDOperationName": "Create access package",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/directoryObjects/getByIds",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directoryObjects/getByIds",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Create access package",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directoryObjects/getByIds",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/directoryObjects/getByIds",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Create access package assignment policy",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/directoryObjects/getByIds",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Create access package assignment policy",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directoryObjects/getByIds",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Create access package assignment policy",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Create access package assignment policy",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directoryObjects/getByIds",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -559,7 +601,19 @@
   },
   {
     "EntraIDOperationName": "Create request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/invitations",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/members/$ref",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Create request",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>",
+    "RequestMethod": "PATCH",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Create request",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -571,25 +625,25 @@
   },
   {
     "EntraIDOperationName": "Create request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/members/$ref",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/invitations",
     "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Create request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Create request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>",
-    "RequestMethod": "PATCH",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Create resource request",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/roleManagement/directory/checkAccess",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Create Terms Of Use",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directory/agreements",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Create Terms Of Use",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directory/agreements/agreementId_<UUID>/PolicyFiles",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -601,19 +655,7 @@
   },
   {
     "EntraIDOperationName": "Create Terms Of Use",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directory/agreements",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Create Terms Of Use",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/agreements",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Create Terms Of Use",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directory/agreements/agreementId_<UUID>/PolicyFiles",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -625,13 +667,13 @@
   },
   {
     "EntraIDOperationName": "Delete access package assignment for a deleted user",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/directoryObjects/getByIds",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directoryObjects/getByIds",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Delete access package assignment for a deleted user",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directoryObjects/getByIds",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/directoryObjects/getByIds",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -655,13 +697,13 @@
   },
   {
     "EntraIDOperationName": "Delete application",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/applications/<UUID>/onPremisesPublishing",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/applications/<UUID>",
     "RequestMethod": "PATCH",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Delete application",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/applications/<UUID>",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/applications/<UUID>/onPremisesPublishing",
     "RequestMethod": "PATCH",
     "EntraIDOperationVersion": "1.0"
   },
@@ -679,13 +721,13 @@
   },
   {
     "EntraIDOperationName": "Delete conditional access policy",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/identity/conditionalAccess/policies/<UUID>",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies/<UUID>",
     "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Delete conditional access policy",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies/<UUID>",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/identity/conditionalAccess/policies/<UUID>",
     "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
@@ -703,7 +745,7 @@
   },
   {
     "EntraIDOperationName": "Delete passwordless phone sign-in credential",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/methods/resetTraditionalAuthenticationMethods",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberObjects",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -715,7 +757,7 @@
   },
   {
     "EntraIDOperationName": "Delete passwordless phone sign-in credential",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberObjects",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/methods/resetTraditionalAuthenticationMethods",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -723,6 +765,12 @@
     "EntraIDOperationName": "Delete passwordless phone sign-in credential",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberGroups",
     "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Delete platform credential",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/fido2Methods/<ID>",
+    "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -751,8 +799,8 @@
   },
   {
     "EntraIDOperationName": "Delete Terms Of Use",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/agreements('<UUID>')",
-    "RequestMethod": "DELETE",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directory/agreements/agreementId_<UUID>/PolicyFiles/<UUID>/content",
+    "RequestMethod": "PUT",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -763,8 +811,8 @@
   },
   {
     "EntraIDOperationName": "Delete Terms Of Use",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directory/agreements/agreementId_<UUID>/PolicyFiles/<UUID>/content",
-    "RequestMethod": "PUT",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/agreements('<UUID>')",
+    "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -805,13 +853,7 @@
   },
   {
     "EntraIDOperationName": "Entitlement Management removes access package assignment request for user",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments/<ID>",
-    "RequestMethod": "DELETE",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Entitlement Management removes access package assignment request for user",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/<ID>",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/members/<UUID>/$ref",
     "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
@@ -823,14 +865,14 @@
   },
   {
     "EntraIDOperationName": "Entitlement Management removes access package assignment request for user",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/members/<UUID>/$ref",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/<ID>",
     "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Entitlement Management removes access package assignment request for user",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directoryObjects/getByIds",
-    "RequestMethod": "POST",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments/<ID>",
+    "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -847,13 +889,19 @@
   },
   {
     "EntraIDOperationName": "Entitlement Management removes access package assignment request for user",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directoryObjects/getByIds",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Entitlement Management removes access package assignment request for user",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/microsoft.graph.assignLicense",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Execute custom extension",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/microsoft.graph.getMemberGroups",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/members/$ref",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -865,7 +913,7 @@
   },
   {
     "EntraIDOperationName": "Execute custom extension",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/members/$ref",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/microsoft.graph.getMemberGroups",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -889,8 +937,20 @@
   },
   {
     "EntraIDOperationName": "Fulfill access package assignment request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/members/<UUID>/$ref",
-    "RequestMethod": "DELETE",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/microsoft.graph.assignLicense",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Fulfill access package assignment request",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/invitations",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Fulfill access package assignment request",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/owners/$ref",
+    "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -903,6 +963,18 @@
     "EntraIDOperationName": "Fulfill access package assignment request",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments",
     "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Fulfill access package assignment request",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Fulfill access package assignment request",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>",
+    "RequestMethod": "PATCH",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -919,48 +991,6 @@
   },
   {
     "EntraIDOperationName": "Fulfill access package assignment request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>",
-    "RequestMethod": "PATCH",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Fulfill access package assignment request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Fulfill access package assignment request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/invitations",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Fulfill access package assignment request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/microsoft.graph.assignLicense",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Fulfill access package assignment request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/owners/$ref",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Fulfill access package resource assignment",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Fulfill access package resource assignment",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>",
-    "RequestMethod": "PATCH",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Fulfill access package resource assignment",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/members/<UUID>/$ref",
     "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
@@ -968,12 +998,6 @@
   {
     "EntraIDOperationName": "Fulfill access package resource assignment",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/members/$ref",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Fulfill access package resource assignment",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/owners/$ref",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -991,7 +1015,25 @@
   },
   {
     "EntraIDOperationName": "Fulfill access package resource assignment",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>",
+    "RequestMethod": "PATCH",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Fulfill access package resource assignment",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/owners/$ref",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Fulfill access package resource assignment",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Fulfill access package resource assignment",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1002,9 +1044,9 @@
     "EntraIDOperationVersion": "1.0"
   },
   {
-    "EntraIDOperationName": "Invite external user",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/invitations",
-    "RequestMethod": "POST",
+    "EntraIDOperationName": "Fulfill access package resource assignment",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/members/<UUID>/$ref",
+    "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -1015,19 +1057,13 @@
   },
   {
     "EntraIDOperationName": "Invite external user",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/organization/<UUID>/isDirectoryFeatureEnabled",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Invite external user",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/invitations",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Invite external user",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/<UUID>/invitations",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Invite external user",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/invitations",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1039,13 +1075,25 @@
   },
   {
     "EntraIDOperationName": "Invite external user",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/invitations",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Invite external user",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/organization/<UUID>/isDirectoryFeatureEnabled",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Invite external user",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
-    "EntraIDOperationName": "Invite external user with reset invitation status",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/invitations",
+    "EntraIDOperationName": "Invite external user",
+    "MicrosoftGraphRequestUri": "https://agsmtlscert.graph.microsoft.com/v1.0/invitations",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1056,8 +1104,8 @@
     "EntraIDOperationVersion": "1.0"
   },
   {
-    "EntraIDOperationName": "PATCH UserAuthMethod.PatchSignInPreferencesAsync",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberGroups",
+    "EntraIDOperationName": "Invite external user with reset invitation status",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/invitations",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1065,6 +1113,12 @@
     "EntraIDOperationName": "PATCH UserAuthMethod.PatchSignInPreferencesAsync",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/signInPreferences",
     "RequestMethod": "PATCH",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "PATCH UserAuthMethod.PatchSignInPreferencesAsync",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberGroups",
+    "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -1081,8 +1135,8 @@
   },
   {
     "EntraIDOperationName": "Ready to fulfill access package assignment request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/microsoft.graph.getMemberGroups",
-    "RequestMethod": "POST",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>",
+    "RequestMethod": "PATCH",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -1099,18 +1153,6 @@
   },
   {
     "EntraIDOperationName": "Ready to fulfill access package assignment request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/owners/$ref",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Ready to fulfill access package assignment request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>",
-    "RequestMethod": "PATCH",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Ready to fulfill access package assignment request",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
@@ -1118,6 +1160,24 @@
   {
     "EntraIDOperationName": "Ready to fulfill access package assignment request",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Ready to fulfill access package assignment request",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/owners/$ref",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Ready to fulfill access package assignment request",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/microsoft.graph.getMemberGroups",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Redeem external user invite",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/invitations",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1130,12 +1190,6 @@
   {
     "EntraIDOperationName": "Redeem external user invite",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Redeem external user invite",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/invitations",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1159,13 +1213,19 @@
   },
   {
     "EntraIDOperationName": "Remove access package resource assignment",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/members/<UUID>/$ref",
+    "RequestMethod": "DELETE",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Remove access package resource assignment",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>",
     "RequestMethod": "PATCH",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Remove access package resource assignment",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/members/<UUID>/$ref",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments/<ID>",
     "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1189,8 +1249,8 @@
   },
   {
     "EntraIDOperationName": "Remove access package resource assignment",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments/<ID>",
-    "RequestMethod": "DELETE",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/microsoft.graph.assignLicense",
+    "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -1200,18 +1260,6 @@
     "EntraIDOperationVersion": "1.0"
   },
   {
-    "EntraIDOperationName": "Remove access package resource assignment",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/microsoft.graph.assignLicense",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Remove eligible member from role in PIM completed (timebound)",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/getByIds",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
     "EntraIDOperationName": "Remove eligible member from role in PIM completed (timebound)",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/groups/getByIds",
     "RequestMethod": "POST",
@@ -1220,6 +1268,12 @@
   {
     "EntraIDOperationName": "Remove eligible member from role in PIM completed (timebound)",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/servicePrincipals/getByIds",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Remove eligible member from role in PIM completed (timebound)",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/getByIds",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1237,6 +1291,12 @@
   },
   {
     "EntraIDOperationName": "Remove member from role in PIM completed (timebound)",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/getByIds",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Remove member from role in PIM completed (timebound)",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/<ID><ID>",
     "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
@@ -1260,8 +1320,8 @@
     "EntraIDOperationVersion": "1.0"
   },
   {
-    "EntraIDOperationName": "Remove member from role in PIM completed (timebound)",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/getByIds",
+    "EntraIDOperationName": "Remove permanent direct role assignment",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/servicePrincipals/getByIds",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1273,18 +1333,6 @@
   },
   {
     "EntraIDOperationName": "Remove permanent direct role assignment",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/servicePrincipals/getByIds",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Remove permanent direct role assignment",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/getByIds",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Remove permanent eligible role assignment",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/getByIds",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
@@ -1297,13 +1345,13 @@
   },
   {
     "EntraIDOperationName": "Remove permanent eligible role assignment",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/servicePrincipals/getByIds",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/getByIds",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
-    "EntraIDOperationName": "Reprocess access package assignment",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/members/$ref",
+    "EntraIDOperationName": "Remove permanent eligible role assignment",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/servicePrincipals/getByIds",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1311,6 +1359,12 @@
     "EntraIDOperationName": "Reprocess access package assignment",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/members/<UUID>/$ref",
     "RequestMethod": "DELETE",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Reprocess access package assignment",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/members/$ref",
+    "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -1327,7 +1381,7 @@
   },
   {
     "EntraIDOperationName": "Reset password (self-service)",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/passwordMethods/<UUID>/resetPassword",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberObjects",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1339,13 +1393,19 @@
   },
   {
     "EntraIDOperationName": "Reset password (self-service)",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberObjects",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/passwordMethods/<UUID>/resetPassword",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
+    "EntraIDOperationName": "Reset password (self-service)",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UPN>",
+    "RequestMethod": "PATCH",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
     "EntraIDOperationName": "Resolve PIM alert",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/getByIds",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/groups/getByIds",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1357,19 +1417,25 @@
   },
   {
     "EntraIDOperationName": "Resolve PIM alert",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/groups/getByIds",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/getByIds",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Restore multifactor authentication on all remembered devices",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication",
+    "RequestMethod": "PATCH",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Self-service password reset flow activity progress",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberObjects",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Self-service password reset flow activity progress",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberGroups",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Self-service password reset flow activity progress",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberObjects",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1381,6 +1447,12 @@
   },
   {
     "EntraIDOperationName": "Triggered PIM alert",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/getByIds",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Triggered PIM alert",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/groups/getByIds",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
@@ -1388,12 +1460,6 @@
   {
     "EntraIDOperationName": "Triggered PIM alert",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/servicePrincipals/getByIds",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Triggered PIM alert",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/getByIds",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1417,13 +1483,25 @@
   },
   {
     "EntraIDOperationName": "Update access package assignment policy",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/directoryObjects/getByIds",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Update access package assignment policy",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>",
     "RequestMethod": "PATCH",
     "EntraIDOperationVersion": "1.0"
   },
   {
-    "EntraIDOperationName": "Update access package assignment policy",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/directoryObjects/getByIds",
+    "EntraIDOperationName": "Update access package assignment request",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/invitations",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Update access package assignment request",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directoryObjects/getByIds",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1447,31 +1525,19 @@
   },
   {
     "EntraIDOperationName": "Update access package assignment request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/directoryObjects/getByIds",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Update access package assignment request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directoryObjects/getByIds",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Update access package assignment request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "Update access package assignment request",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "Update access package assignment request",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/invitations",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/directoryObjects/getByIds",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Update access package assignment request",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1489,8 +1555,8 @@
   },
   {
     "EntraIDOperationName": "Update application",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/applications/<UUID>/connectorGroup/$ref",
-    "RequestMethod": "PUT",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/applications/<UUID>/onPremisesPublishing",
+    "RequestMethod": "PATCH",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -1501,8 +1567,14 @@
   },
   {
     "EntraIDOperationName": "Update application",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/applications/<UUID>/onPremisesPublishing",
-    "RequestMethod": "PATCH",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/applications/<UUID>/connectorGroup/$ref",
+    "RequestMethod": "PUT",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Update application",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/networkaccess/privateAccessConfigs('<UUID>')",
+    "RequestMethod": "PUT",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -1513,8 +1585,8 @@
   },
   {
     "EntraIDOperationName": "Update application",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/applications/<UUID>",
-    "RequestMethod": "PATCH",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/applications('<UUID>')/onPremisesPublishing/segmentsConfiguration/microsoft.graph.IpSegmentConfiguration/ApplicationSegments",
+    "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -1525,8 +1597,8 @@
   },
   {
     "EntraIDOperationName": "Update application",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/applications('<UUID>')/onPremisesPublishing/segmentsConfiguration/microsoft.graph.IpSegmentConfiguration/ApplicationSegments",
-    "RequestMethod": "POST",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/applications/<UUID>",
+    "RequestMethod": "PATCH",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -1538,6 +1610,12 @@
   {
     "EntraIDOperationName": "Update business flow",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/directoryObjects/getByIds",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "Update business flow",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/directoryObjects/getByIds",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1591,19 +1669,31 @@
   },
   {
     "EntraIDOperationName": "User changed default security info",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberObjects",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberGroups",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "User changed default security info",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberObjects",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "User deleted security info",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberObjects",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "User deleted security info",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberGroups",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "User deleted security info",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/microsoftAuthenticatorMethods/<UUID>",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/fido2Methods/<ID>",
     "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1615,14 +1705,8 @@
   },
   {
     "EntraIDOperationName": "User deleted security info",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberGroups",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "User deleted security info",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberObjects",
-    "RequestMethod": "POST",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/microsoftAuthenticatorMethods/<UUID>",
+    "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
   {
@@ -1669,13 +1753,31 @@
   },
   {
     "EntraIDOperationName": "User registered security info",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UPN>/authentication/temporaryAccessPassMethods",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/phoneMethods/<UUID>/disableSmsSignIn",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "User registered security info",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/phoneMethods/<UUID>/disableSmsSignIn",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UPN>/authentication/temporaryAccessPassMethods",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "User requests access package assignment",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>",
+    "RequestMethod": "PATCH",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "User requests access package assignment",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/invitations",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "User requests access package assignment",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1693,30 +1795,6 @@
   },
   {
     "EntraIDOperationName": "User requests access package assignment",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/invitations",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "User requests access package assignment",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>",
-    "RequestMethod": "PATCH",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "User requests access package assignment",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "User requests access package assignment",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/microsoft.graph.assignLicense",
-    "RequestMethod": "POST",
-    "EntraIDOperationVersion": "1.0"
-  },
-  {
-    "EntraIDOperationName": "User requests access package assignment",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
@@ -1728,6 +1806,12 @@
     "EntraIDOperationVersion": "1.0"
   },
   {
+    "EntraIDOperationName": "User requests access package assignment",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/microsoft.graph.assignLicense",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
     "EntraIDOperationName": "User requests to extend access package assignment",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/microsoft.graph.getMemberGroups",
     "RequestMethod": "POST",
@@ -1735,7 +1819,7 @@
   },
   {
     "EntraIDOperationName": "User requests to remove access package assignment",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments/<ID>",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/members/<UUID>/$ref",
     "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1747,7 +1831,7 @@
   },
   {
     "EntraIDOperationName": "User requests to remove access package assignment",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/groups/<UUID>/members/<UUID>/$ref",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/appRoleAssignments/<ID>",
     "RequestMethod": "DELETE",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1759,7 +1843,19 @@
   },
   {
     "EntraIDOperationName": "User started password change",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/me/changePassword",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "User started password change",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/authentication/passwordMethods/<UUID>/changePassword",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "User started password change",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/beta/users/<UUID>/changePassword",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   },
@@ -1770,14 +1866,20 @@
     "EntraIDOperationVersion": "1.0"
   },
   {
-    "EntraIDOperationName": "User started security info registration",
-    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberGroups",
-    "RequestMethod": "POST",
+    "EntraIDOperationName": "User started password reset",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UPN>",
+    "RequestMethod": "PATCH",
     "EntraIDOperationVersion": "1.0"
   },
   {
     "EntraIDOperationName": "User started security info registration",
     "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberObjects",
+    "RequestMethod": "POST",
+    "EntraIDOperationVersion": "1.0"
+  },
+  {
+    "EntraIDOperationName": "User started security info registration",
+    "MicrosoftGraphRequestUri": "https://graph.microsoft.com/v1.0/users/<UUID>/checkMemberGroups",
     "RequestMethod": "POST",
     "EntraIDOperationVersion": "1.0"
   }
